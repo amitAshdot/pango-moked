@@ -1,0 +1,53 @@
+//  Reset ALL style for normalize ///
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // box-sizing: inherit;
+  direction: rtl;
+  overflow-x: hidden;
+  cursor: default;
+  // overflow: auto;
+}
+
+*:not(html) {
+  overflow: hidden;
+}
+
+html {
+  position: relative;
+  scroll-behavior: smooth;
+
+  font-size: 3.33333;
+  // font-size: calc(12px + 1vw);
+
+  min-height: 0vw;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include respond(min-tab-port) {
+    // font-size: 56.25%; // 1rem = 9px, 9 / 16 = 56.25%
+    font-size: calc(0.722vw + 3.9px);
+  }
+
+}
+
+body {
+  /* set the box size in all elements to border-box thanks to *{} */
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin-inline: auto;
+
+  @include respond(tab-port) {
+    // padding: 0;
+  }
+}
+
+::selection {
+  background-color: $color-primary-light;
+  color: $color-white;
+}

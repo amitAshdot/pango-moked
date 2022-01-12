@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block-start: 1rem;
+    padding-block-end: 0;
+
+    .header-img {
+        width: auto;
+
+        @include respond(min-tab-port) {
+            width: auto;
+        }
+    }
+}
+
+.top {
+    &-section {
+        position: relative;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        padding-block-end: 1rem;
+        height: auto;
+        // @include respond(min-tab-port) { }
+    }
+
+    &-img {
+        // background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+        &>img {
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+            z-index: -1;
+        }
+    }
+
+    &-title {
+        position: absolute;
+        padding-inline-start: 1.9rem;
+        padding-inline-end: 1.9rem;
+        bottom: 4.5rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        font-family: adoveFnt22-bold;
+    }
+
+    &-smiley {
+        position: absolute;
+        bottom: 0;
+        left: 4rem;
+        width: auto;
+        height: auto;
+
+    }
+}
