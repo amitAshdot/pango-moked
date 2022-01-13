@@ -29,7 +29,7 @@
                 width: 4rem;
                 height: 4rem;
                 border-radius: 50%;
-                background: #F0F6FF;
+                background: $color-primary-part-transparent;
             }
         }
 
@@ -55,7 +55,7 @@
         position: absolute;
         width: 5rem;
         height: 5rem;
-        background: #F23D3D;
+        background: $color-red-light;
         border-radius: 50%;
         top: 0;
         left: -1rem;
