@@ -4,6 +4,19 @@
         padding-inline-start: 1.5rem;
         padding-inline-end: 1.5rem;
         padding-block-start: 2.5rem;
+
+        .float {
+            &.circle {
+                position: absolute;
+                width: 5rem;
+                height: 5rem;
+                background: $color-red-light;
+                border-radius: 50%;
+                top: 0;
+                left: -1rem;
+
+            }
+        }
     }
 }
 
@@ -47,17 +60,5 @@
             line-height: 1.875rem;
             padding-inline-end: 1rem;
         }
-    }
-}
-
-.float {
-    &.circle {
-        position: absolute;
-        width: 5rem;
-        height: 5rem;
-        background: $color-red-light;
-        border-radius: 50%;
-        top: 0;
-        left: -1rem;
     }
 }

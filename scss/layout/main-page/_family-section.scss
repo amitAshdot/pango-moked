@@ -4,6 +4,19 @@
         // padding-inline-start: 1.5rem;
         // padding-inline-end: 1.5rem;
         padding-block-start: 3rem;
+
+        .float {
+            &.circle {
+                position: absolute;
+                width: 8.09rem;
+                height: 8.09rem;
+                background: $color-primary;
+                border-radius: 50%;
+                bottom: 0;
+                left: -1rem;
+                z-index: 1;
+            }
+        }
     }
 
     // .float.container {
@@ -48,10 +61,12 @@
         padding-inline-start: 1.5rem;
         padding-inline-end: 1.5rem;
         padding-block-start: 4.56rem;
+        padding-block-end: 4.063rem;
 
     }
 
     &-card {
+        position: relative;
         width: 19.5rem;
         height: auto;
         border-radius: 32px;
@@ -60,7 +75,7 @@
         padding-inline-end: 1.9rem;
         padding-block-start: 2.5rem;
         padding-block-end: 2.75rem;
-
+        z-index: 2;
 
         &-img {
             width: calc(100% + 4rem);
