@@ -8,8 +8,8 @@
 
 @mixin absltCenter {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -24,7 +24,7 @@
 
   @include respond(phone) {
     height: 7rem;
-    margin-bottom: 1rem;
+    margin-block-end: 1rem;
     font-size: 3rem;
   }
 
@@ -46,7 +46,7 @@
   background-color: $color;
   width: 50%;
   align-self: center;
-  margin-top: 9rem;
+  margin-block-start: 9rem;
 
   transition: all 0.5s;
 
@@ -54,7 +54,7 @@
     font-size: 3rem;
     width: 50%;
     height: 7rem;
-    margin-top: 5rem;
+    margin-block-start: 5rem;
   }
 }
 
@@ -76,8 +76,8 @@
     background: rgba(255, 255, 255, 0.5);
     width: 60px;
     height: 100%;
-    left: 0;
-    top: 0;
+    inset-inline-start: 0;
+    inset-block-start: 0;
     opacity: 0.5;
     filter: blur(30px);
     transform: translateX(-100px) skewX(-15deg);
@@ -91,8 +91,8 @@
     background: rgba(255, 255, 255, 0.2);
     width: 30px;
     height: 100%;
-    left: 30px;
-    top: 0;
+    inset-inline-start: 30px;
+    inset-block-start: 0;
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100px) skewX(-15deg);
@@ -138,8 +138,8 @@
     content: "";
     width: calc(100% + 4px);
     height: 0;
-    top: -2px;
-    right: -2px;
+    inset-block-start: -2px;
+    inset-inline-end: -2px;
     z-index: -1;
     background-color: $color;
     transition: height 0.2s ease;
