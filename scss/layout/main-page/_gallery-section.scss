@@ -1,0 +1,10 @@
+.gallery {
+    &-section {
+        background: url(/../assets/images/gallery-section/Group.webp);
+        background-repeat: space;
+        position: relative;
+        padding-block-start: 3rem;
+        padding-inline-start: 1.5rem;
+        padding-inline-end: 1.5rem;
+    }
+}

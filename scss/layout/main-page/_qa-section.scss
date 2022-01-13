@@ -1,0 +1,24 @@
+.QA {
+    &-section {
+        position: relative;
+        padding-block-start: 3rem;
+        padding-inline-start: 1.5rem;
+        padding-inline-end: 1.5rem;
+
+
+        .question {
+            padding-block-start: 2.5rem;
+
+            &-title {
+                font-size: 1.562rem;
+                font-family: 'adoveFnt22-bold', sans-serif;
+            }
+
+            &-answer {
+                font-size: 1rem;
+                line-height: 1.875rem;
+            }
+        }
+    }
+
+}
