@@ -1,0 +1,78 @@
+.family {
+    &-section {
+        position: relative;
+        // padding-inline-start: 1.5rem;
+        // padding-inline-end: 1.5rem;
+        padding-block-start: 2.5rem;
+    }
+
+    // .float.container {
+    //     position: absolute;
+    //     top: 0;
+    //     background: transparent;
+    // }
+    &-smiley.lazyload {
+        position: absolute;
+        top: 0;
+        right: -30%;
+        transform: translateX(-50%);
+    }
+
+    &-icon {
+        width: auto;
+        height: auto;
+        object-fit: cover;
+
+        &-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background: $color-primary-part-transparent;
+            position: absolute;
+            top: 0;
+            right: 50%;
+            transform: translate(50%, 0);
+        }
+    }
+
+    &-container {
+        background: $color-primary-part-transparent;
+        text-align: center;
+        padding-inline-start: 1.5rem;
+        padding-inline-end: 1.5rem;
+        padding-block-start: 4.56rem;
+
+    }
+
+    &-card {
+        width: 19.5rem;
+        height: auto;
+        border-radius: 32px;
+        background: $color-white;
+        padding-inline-start: 1.5rem;
+        padding-inline-end: 1.5rem;
+        padding-block-start: 2.5rem;
+
+        &-img {
+            width: calc(100% + 3rem);
+            height: auto;
+            transform: translateX(1.5rem);
+
+        }
+
+        &>h3 {
+            padding-block-start: 3rem;
+            font-size: 1.953rem;
+            line-height: 1.953rem;
+        }
+
+        &>p {
+            font-size: 1rem;
+            line-height: 1.875rem;
+            text-align: center;
+        }
+    }
+}
