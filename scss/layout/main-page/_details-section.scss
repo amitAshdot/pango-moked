@@ -1,0 +1,63 @@
+.details {
+    &-section {
+        position: relative;
+        padding-inline-start: 1.5rem;
+        padding-inline-end: 1.5rem;
+        padding-block-start: 2.5rem;
+    }
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 2.5rem;
+
+    &-top {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &-icon {
+            width: auto;
+            height: auto;
+            object-fit: cover;
+
+            &-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                background: #F0F6FF;
+            }
+        }
+
+        &>h4 {
+            font-size: 1.562rem;
+            font-family: 'adoveFnt22-bold', sans-serif;
+        }
+    }
+
+    &-bottom {
+        margin-block-start: 0.5rem;
+
+        p {
+            font-size: 1rem;
+            line-height: 1.875rem;
+            padding-inline-end: 1rem;
+        }
+    }
+}
+
+.float {
+    &.circle {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        background: #F23D3D;
+        border-radius: 50%;
+        top: 0;
+        left: -1rem;
+    }
+}
