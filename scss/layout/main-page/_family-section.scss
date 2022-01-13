@@ -3,7 +3,7 @@
         position: relative;
         // padding-inline-start: 1.5rem;
         // padding-inline-end: 1.5rem;
-        padding-block-start: 2.5rem;
+        padding-block-start: 3rem;
     }
 
     // .float.container {
@@ -14,8 +14,11 @@
     &-smiley.lazyload {
         position: absolute;
         top: 0;
-        right: -30%;
+        right: -50%;
         transform: translateX(-50%);
+        width: 10.719rem;
+        height: 5rem;
+
     }
 
     &-icon {
@@ -32,9 +35,10 @@
             border-radius: 50%;
             background: $color-primary-part-transparent;
             position: absolute;
-            top: 0;
+            top: 3%;
             right: 50%;
             transform: translate(50%, 0);
+            box-shadow: 2px 2px 16px rgba($color-black, 0.25);
         }
     }
 
@@ -52,14 +56,16 @@
         height: auto;
         border-radius: 32px;
         background: $color-white;
-        padding-inline-start: 1.5rem;
-        padding-inline-end: 1.5rem;
+        padding-inline-start: 1.9rem;
+        padding-inline-end: 1.9rem;
         padding-block-start: 2.5rem;
+        padding-block-end: 2.75rem;
+
 
         &-img {
-            width: calc(100% + 3rem);
+            width: calc(100% + 4rem);
             height: auto;
-            transform: translateX(1.5rem);
+            transform: translateX(2rem);
 
         }
 
