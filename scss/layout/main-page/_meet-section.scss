@@ -5,11 +5,17 @@
 
     }
 
+    &-logo {
+        width: 3.935rem;
+        height: auto;
+    }
+
     &-title {
         width: 100%;
         line-height: 2.6rem;
         margin-block-start: -1rem;
     }
+
 
     &-text {
         display: flex;
@@ -23,7 +29,10 @@
         }
 
         &>img {
-            width: auto;
+            width: 6.5rem;
+            height: 100%;
+            background-size: cover;
+            aspect-ratio: 104 / 184;
         }
     }
 }

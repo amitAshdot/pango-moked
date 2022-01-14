@@ -30,9 +30,10 @@
     }
 
     &-icon {
-        width: auto;
+        width: 1.6875rem;
         height: auto;
-        object-fit: cover;
+        object-fit: contain;
+        aspect-ratio: 27 / 32;
 
         &-container {
             display: flex;
