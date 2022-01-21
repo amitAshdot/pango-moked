@@ -5,6 +5,11 @@
         // padding-inline-end: 1.5rem;
         padding-block-start: 3rem;
 
+        @include respond(min-tab-port) {
+            position: relative;
+            top: -21rem;
+        }
+
         .float {
             &.circle {
                 position: absolute;
@@ -12,9 +17,15 @@
                 height: 8.09rem;
                 background: $color-primary;
                 border-radius: 50%;
-                inset-block-end: 0;
-                inset-inline-end: -1rem;
-                z-index: 1;
+                inset-block-end: 2rem;
+                inset-inline-end: -2rem;
+                z-index: 0;
+
+                @include respond(min-tab-port) {
+                    inset-block-end: 3rem;
+                    inset-inline-end: 88%;
+                    z-index: 0;
+                }
             }
         }
     }
@@ -27,6 +38,27 @@
         width: 10.719rem;
         height: 5rem;
 
+        @include respond(min-tab-port) {
+            inset-block-start: 53%;
+            inset-inline-start: 65%;
+            width: 10.719rem;
+            height: 5rem;
+            transform: translateX(-70%);
+            z-index: 5;
+        }
+
+        & {
+            opacity: 0;
+            transform: translateY(50%);
+            transition: all 0.5s;
+            will-change: transform opacity;
+        }
+
+        &.is-visible {
+            overflow: hidden;
+            opacity: 1;
+            transform: translateY(0%);
+        }
     }
 
     &-icon {
@@ -75,23 +107,59 @@
         margin-inline-start: auto;
         z-index: 2;
 
+        @include respond(min-tab-port) {
+            width: 48.5rem;
+            padding-block-start: 0;
+            padding-inline-start: 10rem;
+            padding-inline-end: 10rem;
+        }
+
+        & {
+            opacity: 0;
+            transform: translateY(50%);
+            transition: all 0.5s;
+            will-change: transform opacity;
+        }
+
+        &.is-visible {
+            overflow: hidden;
+            opacity: 1;
+            transform: translateY(0%);
+        }
+
         &-img {
             width: calc(100% + 4rem);
             height: auto;
             transform: translateX(2rem);
 
+            @include respond(min-tab-port) {
+                width: 24.1rem;
+                transform: translateX(0);
+            }
         }
 
         &>h3 {
             padding-block-start: 3rem;
             font-size: 1.953rem;
             line-height: 1.953rem;
+
+            @include respond(min-tab-port) {
+                padding-block-start: 4rem;
+                font-size: 3rem;
+                line-height: 3rem;
+            }
         }
 
         &>p {
             font-size: 1rem;
             line-height: 1.875rem;
             text-align: center;
+
+            @include respond(min-tab-port) {
+                width: 24.1rem;
+                margin: auto;
+                padding-block-start: 2rem;
+            }
         }
     }
 }

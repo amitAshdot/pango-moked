@@ -1,13 +1,31 @@
+// @font-face {
+//   font-family: 'adoveFnt22';
+//   src: url(https://amitashdot.github.io/targetCall-landing/fonts/ploni-regular-aaa.otf);
+//   font-display: swap;
+
+// }
+
+// @font-face {
+//   font-family: 'adoveFnt22-bold';
+//   src: url(https://amitashdot.github.io/targetCall-landing/fonts/ploni-bold-aaa.otf);
+//   font-display: swap;
+
+// }
+
+// Request URL: https: //targetcall-career.co.il/welcome/moked/wp-content/themes/welcome_theme/assets/fonts/ploni-regular-aaa.otf
+// Request URL: https: //targetcall-career.co.il/welcome/moked/wp-content/themes/welcome_theme/fonts/ploni-bold-aaa.otf
+
+
 @font-face {
   font-family: 'adoveFnt22';
-  src: url(https://amitashdot.github.io/targetCall-landing/fonts/ploni-regular-aaa.otf);
+  src: url(./assets/fonts/ploni-regular-aaa.otf);
   font-display: swap;
 
 }
 
 @font-face {
   font-family: 'adoveFnt22-bold';
-  src: url(https://amitashdot.github.io/targetCall-landing/fonts/ploni-bold-aaa.otf);
+  src: url(./assets/fonts/ploni-bold-aaa.otf);
   font-display: swap;
 
 }
@@ -77,3 +95,11 @@ p {
 .orange-text {
   color: $color-secondary;
 }
+
+
+
+
+// Request URL: https: //targetcall-career.co.il/wp-content/themes/welcome_theme/assets/fonts/ploni-regular-aaa.otf
+// Request URL: https: //targetcall-career.co.il/wp-content/themes/welcome_theme/assets/fonts/ploni-regular-aaa.otf
+// Request URL: https: //targetcall-career.co.il/welcome/moked/wp-content/themes/welcome_theme/assets/fonts/ploni-bold-aaa.otf
+// moked/wp-content/themes/welcome_theme/assets/fonts/ploni-regular-aaa.otf

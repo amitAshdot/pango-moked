@@ -6,13 +6,151 @@ header {
     padding-block-end: 0;
 
     .header-img {
-        width: auto;
+        width: 9.55rem;
+        height: auto;
+        max-width: 170px;
 
         @include respond(min-tab-port) {
-            width: auto;
+            width: 15.23rem;
+            max-width: fit-content;
+            padding-block-start: 1.5rem;
+            padding-block-end: 1.5rem;
+
         }
     }
 }
+
+.menu {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.05rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: $color-primary;
+    z-index: 5;
+
+    &-icon {
+
+        &-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: 0.3s all;
+            transform: rotate(0deg);
+
+            &::before {
+                content: '';
+                border: 2px solid white;
+                background: $color-white;
+
+                width: 2rem;
+                border-radius: 1rem;
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%, -50%) rotate(90deg);
+                opacity: 1;
+                transition: 0.3s all;
+
+            }
+
+            &::after {
+                content: '';
+                border: 2px solid white;
+                background: $color-white;
+                width: 2rem;
+                border-radius: 1rem;
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%, -50%);
+            }
+
+            &.open {
+                transform: rotate(-360deg);
+
+                &::before {
+                    opacity: 0;
+                    transform: translate(50%, -50%);
+                }
+            }
+        }
+    }
+
+    &+.menu-buttons-container {
+        position: fixed;
+        top: 1.5rem;
+        right: 1.05rem;
+        width: 4rem;
+        height: 4rem;
+        background: transparent;
+        z-index: 4;
+
+        &>.menu-buttons-fixed {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        & .menu-button {
+            background: red;
+            width: 1.5rem;
+            height: 1.5rem;
+            transition: 0.3s all 0.3;
+        }
+
+        &-phone {
+            position: fixed;
+            bottom: -50%;
+            transition: 0.3s all 0.3;
+        }
+
+        &-location {
+            position: fixed;
+            left: -50%;
+            transition: 0.3s all 0.3;
+        }
+    }
+
+    &.open {
+        &+.menu-buttons-container {
+            position: fixed;
+            top: 1.5rem;
+            right: 1.05rem;
+            width: 8rem;
+            height: 8rem;
+            background: transparent;
+            z-index: 4;
+
+            & .menu-button {
+                position: absolute;
+                background: $color-primary;
+                width: 1.5rem;
+                height: 1.5rem;
+                // opacity: 1;
+
+                &-phone {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    bottom: 0;
+                    right: 50%;
+                    transform: translateX(50%);
+                }
+
+                &-location {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+
 
 .top {
     &-section {
@@ -29,6 +167,10 @@ header {
     &-img {
         // background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
         height: 29.5rem;
+
+        @include respond(min-tab-port) {
+            height: 36.5rem;
+        }
 
         &>img {
             object-fit: contain;
@@ -47,7 +189,14 @@ header {
         // font-size: 3.25ch;
         line-height: 3rem;
         text-align: center;
-        font-family: adoveFnt22-bold;
+        align-self: center;
+        font-family: 'adoveFnt22-bold', sans-serif;
+
+        @include respond(min-tab-port) {
+            font-size: 4.5525rem;
+            line-height: 4.5525rem;
+            width: 48rem;
+        }
     }
 
     &-smiley {
@@ -56,6 +205,10 @@ header {
         inset-inline-end: 4rem;
         width: 6.431rem;
         height: 3rem;
+
+        @include respond(min-tab-port) {
+            left: 35.5%;
+        }
 
     }
 }

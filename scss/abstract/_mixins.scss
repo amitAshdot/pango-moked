@@ -209,8 +209,15 @@ $breakpoint argument choices
   // }
 
   @if $breakpoint==min-tab-port {
-    @media only screen and (min-width: 58.75em) {
+    @media only screen and (min-width: 47.5em) {
       // 900px
+      @content;
+    }
+  }
+
+  @if $breakpoint==min-biggest {
+    @media only screen and (min-width: 90em) {
+      // 1440px
       @content;
     }
   }

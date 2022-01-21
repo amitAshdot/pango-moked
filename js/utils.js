@@ -20,10 +20,17 @@ const handleFirstTabClick = (e) => {
     }
 };
 
+const handleMenuClick = (e) => {
+    document.getElementsByClassName('menu-icon-container')[0].classList.toggle('open')
+    e.currentTarget.classList.toggle('open')
+}
 document.addEventListener('DOMContentLoaded', (event) => {
     // document.getElementById("videoPlay").addEventListener("click", () => playStopVideo());
     window.onkeydown = handleFirstTabClick;
 
+    document.getElementsByClassName('menu')[0].onclick = handleMenuClick
 });
+
+
 
 // tabbed

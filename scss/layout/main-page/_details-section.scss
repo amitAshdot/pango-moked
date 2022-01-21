@@ -5,6 +5,16 @@
         padding-inline-end: 1.5rem;
         padding-block-start: 2.5rem;
 
+
+        @include respond(min-tab-port) {
+            display: flex;
+            justify-content: space-between;
+            padding-inline-start: 7.875rem;
+            padding-inline-end: 7.875rem;
+            position: relative;
+            top: -21rem;
+        }
+
         .float {
             &.circle {
                 position: absolute;
@@ -15,6 +25,10 @@
                 inset-block-start: 0;
                 inset-inline-end: -1rem;
 
+                @include respond(min-tab-port) {
+                    inset-inline-start: -1.5rem;
+
+                }
             }
         }
     }
@@ -24,6 +38,10 @@
     display: flex;
     flex-direction: column;
     margin-block-end: 2.5rem;
+
+    @include respond(min-tab-port) {
+        width: 19rem;
+    }
 
     &-top {
         display: flex;
@@ -50,6 +68,19 @@
             font-size: 1.562rem;
             font-family: 'adoveFnt22-bold', sans-serif;
         }
+
+        & {
+            opacity: 0;
+            transform: translateY(50%);
+            transition: all 0.5s;
+            will-change: transform opacity;
+        }
+
+        &.is-visible {
+            overflow: hidden;
+            opacity: 1;
+            transform: translateY(0%);
+        }
     }
 
     &-bottom {
@@ -60,5 +91,19 @@
             line-height: 1.875rem;
             padding-inline-end: 1rem;
         }
+
+        & {
+            opacity: 0;
+            transform: translateY(50%);
+            transition: all 0.5s;
+            will-change: transform opacity;
+        }
+
+        &.is-visible {
+            overflow: hidden;
+            opacity: 1;
+            transform: translateY(0%);
+        }
+
     }
 }

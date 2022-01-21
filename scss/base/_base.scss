@@ -34,9 +34,15 @@ html {
 
   @include respond(min-tab-port) {
     // font-size: 56.25%; // 1rem = 9px, 9 / 16 = 56.25%
-    font-size: calc(0.722vw + 3.9px);
+    font-size: calc(100vw * 0.011111111);
   }
 
+  @include respond(min-biggest) {
+    font-size: 16px;
+    max-width: 1440px;
+    margin: auto;
+    // background: $color-primary;
+  }
 }
 
 body {
@@ -48,9 +54,18 @@ body {
   @include respond(tab-port) {
     // padding: 0;
   }
+
+  @include respond(min-biggest) {
+    background: $color-white;
+  }
 }
 
 ::selection {
   background-color: $color-primary-light;
   color: $color-white;
+}
+
+em {
+  font-style: normal;
+  color: $color-primary;
 }
