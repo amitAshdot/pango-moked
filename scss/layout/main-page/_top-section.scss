@@ -30,14 +30,16 @@ header {
     background: $color-primary;
     z-index: 5;
 
+    // box-shadow: 2px 2px 16px rgb(0 0 0 / 25%);
+    // filter: drop-shadow(0px 1px 5px black);
     &-icon {
 
         &-container {
             position: relative;
             width: 100%;
             height: 100%;
-            transition: 0.3s all;
             transform: rotate(0deg);
+            transition: 0.3s all 0.3s;
 
             &::before {
                 content: '';
@@ -51,7 +53,7 @@ header {
                 right: 50%;
                 transform: translate(50%, -50%) rotate(90deg);
                 opacity: 1;
-                transition: 0.3s all;
+                transition: 0.3s all 0.3s;
 
             }
 
@@ -69,10 +71,12 @@ header {
 
             &.open {
                 transform: rotate(-360deg);
+                transition: 0.3s all;
 
                 &::before {
                     opacity: 0;
                     transform: translate(50%, -50%);
+                    transition: 0.3s all;
                 }
             }
         }
@@ -86,6 +90,7 @@ header {
         height: 4rem;
         background: transparent;
         z-index: 4;
+        transition: 0.3s all;
 
         &>.menu-buttons-fixed {
             position: relative;
@@ -94,23 +99,68 @@ header {
         }
 
         & .menu-button {
-            background: red;
+            position: absolute;
+            background: $color-primary;
             width: 1.5rem;
             height: 1.5rem;
-            transition: 0.3s all 0.3;
+            opacity: 0;
+            // background: red;
+            // width: 1.5rem;
+            // height: 1.5rem;
+            transition: 0.2s all;
+
+            &-icon {
+                width: 1.2rem;
+                height: auto;
+            }
+
+            &-phone {
+                opacity: 0;
+                width: 3rem;
+                height: 3rem;
+                bottom: 0%;
+                right: 0px;
+                border: none;
+                border-radius: 10rem;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                color: white;
+                font-size: 1rem;
+                transform: translate(-10px, -10px);
+                transition: .3s all;
+            }
+
+            &-location {
+                opacity: 0;
+                width: fit-content;
+                height: auto;
+                top: 25%;
+                left: -25%;
+                transform: translate(10px, -55%);
+                border: none;
+                border-radius: 10rem;
+                padding: 0.5rem 1rem;
+                display: flex;
+                align-items: center;
+                color: white;
+                font-size: 1rem;
+                gap: 1rem;
+                transition: .3s all;
+            }
         }
 
-        &-phone {
-            position: fixed;
-            bottom: -50%;
-            transition: 0.3s all 0.3;
-        }
+        // &-phone {
+        //     position: fixed;
+        //     bottom: -50%;
+        //     transition: 0.3s all 0.3s;
+        // }
 
-        &-location {
-            position: fixed;
-            left: -50%;
-            transition: 0.3s all 0.3;
-        }
+        // &-location {
+        //     position: fixed;
+        //     left: -50%;
+        //     transition: 0.3s all 0.3s;
+        // }
     }
 
     &.open {
@@ -118,32 +168,63 @@ header {
             position: fixed;
             top: 1.5rem;
             right: 1.05rem;
-            width: 8rem;
-            height: 8rem;
+            width: 80%;
+            height: 9rem;
             background: transparent;
             z-index: 4;
+            transition: 0.3s all 0.3s;
+
+            @include respond(min-tab-port) {
+                width: 18rem;
+            }
 
             & .menu-button {
                 position: absolute;
                 background: $color-primary;
                 width: 1.5rem;
                 height: 1.5rem;
-                // opacity: 1;
+                opacity: 1;
+                // filter: drop-shadow(0px 1px 4px rgba(black, 0.6));
+                transition: 0.3s all 0.3s;
+
+                &-icon {
+                    width: 1.2rem;
+                    height: auto;
+                }
 
                 &-phone {
-                    width: 1.5rem;
-                    height: 1.5rem;
-                    bottom: 0;
-                    right: 50%;
-                    transform: translateX(50%);
+                    opacity: 1;
+                    width: 3rem;
+                    height: 3rem;
+                    bottom: 0%;
+                    right: 0px;
+                    border: none;
+                    border-radius: 10rem;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    font-size: 1rem;
+                    transform: translate(-10px, -10px);
                 }
 
                 &-location {
-                    width: 1.5rem;
-                    height: 1.5rem;
-                    top: 50%;
-                    left: 0;
-                    transform: translateY(-50%);
+                    opacity: 1;
+                    width: fit-content;
+                    height: auto;
+                    top: 25%;
+                    left: 0.4rem;
+                    transform: translate(10px, -55%);
+                    border: none;
+                    border-radius: 10rem;
+                    padding: 0.5rem 1rem;
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    font-size: 1rem;
+                    gap: 1rem;
+                    transition: 0.3s all 0.3s;
+
                 }
             }
         }
@@ -173,10 +254,21 @@ header {
         }
 
         &>img {
-            object-fit: contain;
-            width: 100%;
-            height: auto;
+            object-fit: cover;
+            width: auto;
+            height: 100%;
             z-index: -1;
+            position: relative;
+            right: -5rem;
+
+
+            @include respond(min-tab-port) {
+                object-fit: contain;
+                width: 100%;
+                height: auto;
+                top: -5rem;
+                right: 0;
+            }
         }
     }
 

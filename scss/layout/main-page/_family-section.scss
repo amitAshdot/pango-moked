@@ -49,15 +49,25 @@
 
         & {
             opacity: 0;
-            transform: translateY(50%);
+            transform: translateY(50%) translateX(-50%);
             transition: all 0.5s;
             will-change: transform opacity;
+
+            @include respond(min-tab-port) {
+                transform: translateY(50%) translateX(-70%);
+
+            }
         }
 
         &.is-visible {
             overflow: hidden;
             opacity: 1;
-            transform: translateY(0%);
+            transform: translateY(0%) translateX(-50%);
+
+            @include respond(min-tab-port) {
+                transform: translateY(0%) translateX(-70%);
+
+            }
         }
     }
 
@@ -78,7 +88,7 @@
             position: absolute;
             inset-block-start: 3%;
             inset-inline-end: 50%;
-            transform: translate(-50%, 0);
+            transform: translate(-50%, -20%);
             box-shadow: 2px 2px 16px rgba($color-black, 0.25);
         }
     }

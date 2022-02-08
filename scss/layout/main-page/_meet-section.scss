@@ -65,6 +65,8 @@
             background-size: cover;
             aspect-ratio: 104 / 184;
             shape-outside: url(../assets/images/meet-section/blue-face.webp);
+            object-fit: cover;
+            object-position: right;
 
             @include respond(min-tab-port) {
                 width: 20.3rem;

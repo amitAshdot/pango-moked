@@ -17,6 +17,17 @@
       "oAP" : "\/assets\/images\/Archive.zip",
       "oF" : 0
     },
+    "\/assets\/images\/common\/location.webp" : {
+      "ft" : 8388608,
+      "iS" : 238,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/common\/location.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/assets\/images\/common\/logo.webp" : {
       "ft" : 8388608,
       "iS" : 6400,
@@ -28,9 +39,31 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
-    "\/assets\/images\/common\/smile-blue.webp" : {
+    "\/assets\/images\/common\/phone.webp" : {
+      "ft" : 8388608,
+      "iS" : 252,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/common\/phone.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/images\/common\/smile-blue-old.webp" : {
       "ft" : 8388608,
       "iS" : 556,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/common\/smile-blue-old.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/images\/common\/smile-blue.webp" : {
+      "ft" : 8388608,
+      "iS" : 4500,
       "oA" : 0,
       "oAP" : "\/assets\/images\/common\/smile-blue.webp",
       "oF" : 0,
@@ -41,9 +74,20 @@
     },
     "\/assets\/images\/details-section\/clock.webp" : {
       "ft" : 8388608,
-      "iS" : 378,
+      "iS" : 3962,
       "oA" : 0,
       "oAP" : "\/assets\/images\/details-section\/clock.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/images\/details-section\/connect.webp" : {
+      "ft" : 8388608,
+      "iS" : 3354,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/details-section\/connect.webp",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -72,9 +116,20 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/assets\/images\/details-section\/place.webp" : {
+      "ft" : 8388608,
+      "iS" : 3340,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/details-section\/place.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/assets\/images\/family-section\/arrow-down.webp" : {
       "ft" : 8388608,
-      "iS" : 184,
+      "iS" : 554,
       "oA" : 0,
       "oAP" : "\/assets\/images\/family-section\/arrow-down.webp",
       "oF" : 0,
@@ -85,7 +140,7 @@
     },
     "\/assets\/images\/family-section\/Frame.webp" : {
       "ft" : 8388608,
-      "iS" : 2206,
+      "iS" : 11566,
       "oA" : 0,
       "oAP" : "\/assets\/images\/family-section\/Frame.webp",
       "oF" : 0,
@@ -127,11 +182,33 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/assets\/images\/meet-section\/face.webp" : {
+      "ft" : 8388608,
+      "iS" : 10566,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/meet-section\/face.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/assets\/images\/meet-section\/meet-logo.webp" : {
       "ft" : 8388608,
       "iS" : 1798,
       "oA" : 0,
       "oAP" : "\/assets\/images\/meet-section\/meet-logo.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/assets\/images\/top-section\/bg-big.webp" : {
+      "ft" : 8388608,
+      "iS" : 10176124,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/top-section\/bg-big.webp",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -160,6 +237,17 @@
       "oAP" : "\/css\/index-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/dist\/main-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/dist\/main-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/dist\/main.js" : {
       "bF" : 0,
@@ -228,6 +316,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/js\/tabController-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/js\/utils-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/js\/utils-min-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
